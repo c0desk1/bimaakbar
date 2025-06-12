@@ -1,5 +1,6 @@
 // Import library Firebase yang dibutuhkan
 import firebase from 'firebase/app';
+import { getAnalytics } from "firebase/analytics";
 import 'firebase/database'; // Digunakan untuk Realtime Database
 import 'firebase/auth';     // Digunakan untuk Authentication (login/logout)
 import 'firebase/storage';  // Digunakan untuk Firebase Storage (unggah gambar)
@@ -10,9 +11,10 @@ const firebaseConfig = {
   authDomain: "bima-akbar-web.firebaseapp.com",
   databaseURL: "https://bima-akbar-web-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "bima-akbar-web",
-  storageBucket: "bima-akbar-web.appspot.com",
+  storageBucket: "bima-akbar-web.firebasestorage.app",
   messagingSenderId: "521611265429",
-  appId: "1:521611265429:web:9e6c64385b5abcbad6e29c"
+  appId: "1:521611265429:web:9e6c64385b5abcbad6e29c",
+  measurementId: "G-ZHKJ22MFVE"
 };
 
 // Inisialisasi Firebase App
