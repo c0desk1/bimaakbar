@@ -1,5 +1,5 @@
 {
-  "name": "web3-affiliate-demo",
+  "name": "Bima Akbar",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "firebase": "^x.x.x"
   },
   "devDependencies": {
     "tailwindcss": "latest",
